@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @dife.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @dife.time %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @dife.duration %>
+</p>
+
+<p>
+  <strong>Depth:</strong>
+  <%= @dife.depth %>
+</p>
+
+<p>
+  <strong>Dive type:</strong>
+  <%= @dife.dive_type %>
+</p>
+
+<p>
+  <strong>Dive buddy:</strong>
+  <%= @dife.dive_buddy %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @dife.location %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @dife.rating %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @dife.image_URL %>
+</p>
+
+<%= link_to 'Edit', edit_dife_path(@dife) %> |
+<%= link_to 'Back', dives_path %>

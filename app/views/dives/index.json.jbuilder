@@ -1,0 +1,1 @@
+json.array! @dives, partial: 'dives/dife', as: :dife

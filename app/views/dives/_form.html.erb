@@ -1,0 +1,53 @@
+<%= form_for(@dife) do |f| %>
+  <% if @dife.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dife.errors.count, "error") %> prohibited this dife from being saved:</h2>
+
+      <ul>
+      <% @dife.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.time_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.time_select :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :depth %><br>
+    <%= f.text_field :depth %>
+  </div>
+  <div class="field">
+    <%= f.label :dive_type %><br>
+    <%= f.number_field :dive_type %>
+  </div>
+  <div class="field">
+    <%= f.label :dive_buddy %><br>
+    <%= f.number_field :dive_buddy %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %><br>
+    <%= f.number_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :image_URL %><br>
+    <%= f.text_field :image_URL %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

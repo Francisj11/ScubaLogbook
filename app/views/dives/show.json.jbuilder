@@ -1,0 +1,1 @@
+json.partial! "dives/dife", dife: @dife

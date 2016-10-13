@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-10-13
+  time: 2016-10-13 22:11:05
+  duration: 2016-10-13 22:11:05
+  depth: 9.99
+  dive_type: 1
+  dive_buddy: 1
+  location: MyString
+  rating: 1
+  image_URL: MyString
+
+two:
+  date: 2016-10-13
+  time: 2016-10-13 22:11:05
+  duration: 2016-10-13 22:11:05
+  depth: 9.99
+  dive_type: 1
+  dive_buddy: 1
+  location: MyString
+  rating: 1
+  image_URL: MyString
