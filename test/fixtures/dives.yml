@@ -11,6 +11,7 @@ one:
   rating: 4
   image_URL: MyString.jpg
   title: MyString
+  notes: MyNotes
 
 two:
   date: 2015-10-13
@@ -22,4 +23,5 @@ two:
   location: MyString
   rating: 3
   image_URL: MyString.gif
-  title: MyString2	
+  title: MyString2
+  notes: MyNotes2

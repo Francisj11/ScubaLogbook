@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
   <div class="field">
     <%= f.label :date %><br>
     <%= f.date_select :date %>
@@ -27,9 +30,10 @@
     <%= f.label :depth %><br>
     <%= f.text_field :depth %>
   </div>
+
   <div class="field">
-    <%= f.label :dive_type %><br>
-    <%= f.number_field :dive_type %>
+  <%= f.label :dive_type %><br>
+  <%= f.select :dive_type, [['Standard',0],['Night',1],['Cave',2],['Cold',3]] %>
   </div>
   <div class="field">
     <%= f.label :dive_buddy %><br>
@@ -46,6 +50,10 @@
   <div class="field">
     <%= f.label :image_URL %><br>
     <%= f.text_field :image_URL %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
   </div>
   <div class="actions">
     <%= f.submit %>
