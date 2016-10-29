@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161013211105) do
+ActiveRecord::Schema.define(version: 20161013213749) do
 
   create_table "dives", force: :cascade do |t|
     t.date     "date"

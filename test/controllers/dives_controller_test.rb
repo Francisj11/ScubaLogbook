@@ -2,7 +2,7 @@ require 'test_helper'
 
 class DivesControllerTest < ActionController::TestCase
   setup do
-    @dife = dives(:one)
+    @dive = dives(:one)
   end
 
   test "should get index" do
@@ -16,32 +16,32 @@ class DivesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create dife" do
-    assert_difference('Dife.count') do
-      post :create, dife: { date: @dife.date, depth: @dife.depth, dive_buddy: @dife.dive_buddy, dive_type: @dife.dive_type, duration: @dife.duration, image_URL: @dife.image_URL, location: @dife.location, rating: @dife.rating, time: @dife.time }
+  test "should create dive" do
+    assert_difference('Dive.count') do
+      post :create, dive: { date: @dive.date, depth: @dive.depth, dive_buddy: @dive.dive_buddy, dive_type: @dive.dive_type, duration: @dive.duration, image_URL: @dive.image_URL, location: @dive.location, rating: @dive.rating, time: @dive.time }
     end
 
-    assert_redirected_to dife_path(assigns(:dife))
+    assert_redirected_to dive_path(assigns(:dive))
   end
 
-  test "should show dife" do
-    get :show, id: @dife
+  test "should show dive" do
+    get :show, id: @dive
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @dife
+    get :edit, id: @dive
     assert_response :success
   end
 
-  test "should update dife" do
-    patch :update, id: @dife, dife: { date: @dife.date, depth: @dife.depth, dive_buddy: @dife.dive_buddy, dive_type: @dife.dive_type, duration: @dife.duration, image_URL: @dife.image_URL, location: @dife.location, rating: @dife.rating, time: @dife.time }
-    assert_redirected_to dife_path(assigns(:dife))
+  test "should update dive" do
+    patch :update, id: @dive, dive: { date: @dive.date, depth: @dive.depth, dive_buddy: @dive.dive_buddy, dive_type: @dive.dive_type, duration: @dive.duration, image_URL: @dive.image_URL, location: @dive.location, rating: @dive.rating, time: @dive.time }
+    assert_redirected_to dive_path(assigns(:dive))
   end
 
-  test "should destroy dife" do
-    assert_difference('Dife.count', -1) do
-      delete :destroy, id: @dife
+  test "should destroy dive" do
+    assert_difference('Dive.count', -1) do
+      delete :destroy, id: @dive
     end
 
     assert_redirected_to dives_path

@@ -1,1 +1,1 @@
-json.array! @dives, partial: 'dives/dife', as: :dife
+json.array! @dives, partial: 'dives/dive', as: :dive
