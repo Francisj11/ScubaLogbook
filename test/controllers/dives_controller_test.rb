@@ -18,7 +18,7 @@ class DivesControllerTest < ActionController::TestCase
 
   test "should create dive" do
     assert_difference('Dive.count') do
-      post :create, dive: { date: @dive.date, depth: @dive.depth, dive_buddy: @dive.dive_buddy, dive_type: @dive.dive_type, duration: @dive.duration, image_URL: @dive.image_URL, location: @dive.location, rating: @dive.rating, time: @dive.time }
+      post :create, dive: { date: @dive.date, depth: @dive.depth, dive_buddy: @dive.dive_buddy, dive_type: @dive.dive_type, duration: @dive.duration, image_URL: @dive.image_URL, location: @dive.location, rating: @dive.rating, time: @dive.time, title: @dive.title }
     end
 
     assert_redirected_to dive_path(assigns(:dive))
@@ -35,7 +35,7 @@ class DivesControllerTest < ActionController::TestCase
   end
 
   test "should update dive" do
-    patch :update, id: @dive, dive: { date: @dive.date, depth: @dive.depth, dive_buddy: @dive.dive_buddy, dive_type: @dive.dive_type, duration: @dive.duration, image_URL: @dive.image_URL, location: @dive.location, rating: @dive.rating, time: @dive.time }
+    patch :update, id: @dive, dive: { date: @dive.date, depth: @dive.depth, dive_buddy: @dive.dive_buddy, dive_type: @dive.dive_type, duration: @dive.duration, image_URL: @dive.image_URL, location: @dive.location, rating: @dive.rating, time: @dive.time, title: @dive.title }
     assert_redirected_to dive_path(assigns(:dive))
   end
 

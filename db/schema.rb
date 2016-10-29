@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161013213749) do
+ActiveRecord::Schema.define(version: 20161029154924) do
 
   create_table "dives", force: :cascade do |t|
     t.date     "date"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20161013213749) do
     t.string   "image_URL"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "title"
   end
 
 end

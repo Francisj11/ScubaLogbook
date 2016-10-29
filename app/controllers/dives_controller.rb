@@ -69,6 +69,6 @@ class DivesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dive_params
-      params.require(:dive).permit(:date, :time, :duration, :depth, :dive_type, :dive_buddy, :location, :rating, :image_URL)
+      params.require(:dive).permit(:date, :time, :duration, :depth, :dive_type, :dive_buddy, :location, :rating, :image_URL, :title)
     end
 end
