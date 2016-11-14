@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.entry {
+	background-color:grey;
+	margin:0px;
+	position:fixed;
+}
+
+footer {
+float:bottom;
+}
+
+#columns {
+  background: #141;
+
+  #main {
+    margin-left: 17em;
+    padding: 1em;
+    background: white;
+	
+  }
+
+  #side {
+    float: left;
+    padding: 1em 2em;
+    width: 13em;
+    background: #141;
+    color: white;
+
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: #bfb;
+	  font-size: small;
+	}
+      }
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 180px; /* must be same height as the footer */
+}
+
+#footer {
+  position: relative;
+  margin-top: -180px; /* negative value of footer height */
+  height: 180px;
+  clear: both;
+	background-color:white;
+
+} 
+
+/* Opera Fix thanks to Maleika (Kohoutec) */
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;/* thank you Erik J - negate effect of float*/
+}
+
+#banner {
+	background-color:white;
+	margin:0;
+	position:fixed;
+}
+
+img{
+	border:0;
+	padding:5px;
+	padding-bottom:0px;
+}
+
+a:hover img {
+border: none !important;
+display: block;
+}
+
+.container-fluid {
+	position:fixed;
+}
+
+.navbar navbar-default {
+	position:fixed;
+}
+
+nav.navbar-default {
+	position:fixed;
+}

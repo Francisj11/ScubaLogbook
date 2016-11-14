@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>ScubaLogbook</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+
+<% if false %>
+code to comment
+
+
+  <title>ScubaLogbook</title>
+  
+
+
+ class="active"
+<% end %>
 </head>
 <body>
-<h2>Spectacular Mountain</h2>
-<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a  href="http://localhost:3000"><%= image_tag("logo_small_transparent.png",size: "200x52")%></a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+      <li><a href="http://localhost:3000/about">About</a></li>
+      <li><a href="http://localhost:3000/contact">Contact</a></li>
+      <li><a href="http://localhost:3000/dives">Dives</a></li>
+		<li><a href="http://localhost:3000/dives/new">Add a dive</a></li>
+    </ul>
+  </div>
+</nav>
+ 
+
+
+<%=yield%>
+  </div>
+</div>
 </body>
+<center><footer>Copyright: Francis Murtagh 2016</footer></center>
 </html>

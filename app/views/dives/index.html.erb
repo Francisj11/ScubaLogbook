@@ -1,6 +1,13 @@
-<p id="notice"><%= notice %></p>
+<%= image_tag("https://upload.wikimedia.org/wikipedia/commons/f/f1/Whale_shark_Georgia_aquarium.jpg",class: "background_img") %>
 
-<h1>Listing Dives</h1>
+<div class="window"></div>
+
+<div class="page">
+<br/>
+
+
+
+
 
 <table>
   
@@ -10,20 +17,20 @@
   
       <%= content_tag :tr, class: cycle('list_line_odd', 'list_line_even') do %>
   <td>
-    <%= image_tag(dive.image_URL, class: 'list_image') %>
+    <%= image_tag(dive.image_URL, class: 'list_image',size: "50x50") %>
   </td>
         <td><%= dive.date %></td>
-        <td><%= dive.time %></td>
+        <th><%= dive.time %></td>
         <td><%= dive.duration %></td>
-        <td><%= dive.depth %></td>
+        <th><%= dive.depth %></td>
         <td><%= dive.dive_type %></td>
-        <td><%= dive.dive_buddy %></td>
+        <th><%= dive.dive_buddy %></td>
         <td><%= dive.location %></td>
-        <td><%= dive.rating %></td>
+        <th><%= dive.rating %></td>
         <td><%= dive.image_URL %></td>
-        <td><%= link_to 'Show', dive %></td>
+        <th><%= link_to 'Show', dive %></td>
         <td><%= link_to 'Edit', edit_dive_path(dive) %></td>
-        <td><%= link_to 'Destroy', dive, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th><%= link_to 'Destroy', dive, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
     <% end %>
   </tbody>
@@ -32,3 +39,6 @@
 <br>
 
 <%= link_to 'New Dive', new_dive_path %>
+
+</div>
+</div>

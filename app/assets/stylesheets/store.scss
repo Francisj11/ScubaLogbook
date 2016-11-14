@@ -1,0 +1,62 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img{
+	
+	top:0px;
+}
+
+.background_img{
+	position:fixed;
+	z-index:-999;
+	top:-250px;
+	left:-50px;
+	width:1920;
+	margin:0px;
+}
+
+.window{
+	height:500px
+	
+}
+
+.page{
+	background-color:#000040;
+	height:2000px;
+	
+}
+
+#welcome {
+	font-size:5em;
+	color:white;
+}
+
+p{
+	color:white;
+	font-size: larger;
+}
+
+.octopus_img{
+	position:fixed;
+	z-index:-999;
+
+	left:-50px;
+
+	margin:0px;
+	width: 1920px;
+	top:-100px;
+	left:-5px;
+}
+
+#fish_img {
+	position:fixed;
+	z-index:-999;
+
+	left:-50px;
+
+	margin:0px;
+	width: 1920px;
+	top:-100px;
+	left:-5px;
+}

@@ -4,12 +4,16 @@
 
 .dives {
   table {
+	border-spacing: 100px;
     border-collapse: collapse;
+	background-color: #4CAF50;
   }
 
   table tr td {
-    padding: 5px;
+    padding: 50px;
+	border-spacing: 100px;
     vertical-align: top;
+	background-color: #4CAF50;
   }
 
   .list_image {
@@ -49,3 +53,8 @@
     background:   #f8b0f8;
   }
 }
+
+.list_line_odd {
+	background-color: #4CAF50;
+}
+
