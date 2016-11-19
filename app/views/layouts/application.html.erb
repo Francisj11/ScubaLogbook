@@ -15,7 +15,8 @@
 
 <% if false %>
 code to comment
-
+<a href="http://localhost:3000/dives/?<%=session["user_id"]%>">My Dives</a>
+<%= link_to "My Dives", {:action => 'index' , :id => session["user_id"]}%>
 
   <title>ScubaLogbook</title>
   
@@ -34,17 +35,24 @@ code to comment
     </div>
     <ul class="nav navbar-nav">
       
-      <li><a href="http://localhost:3000/about">About</a></li>
-      <li><a href="http://localhost:3000/contact">Contact</a></li>
+      <li><a href="http://localhost:3000/login">Login</a></li>
+   		<li><a href="http://localhost:3000/users/new">New User</a></li>
       <li><a href="http://localhost:3000/dives">Dives</a></li>
 		<li><a href="http://localhost:3000/dives/new">Add a dive</a></li>
+		<li><a href="http://localhost:3000/dives/?id=<%=session["user_id"]%>">My Dives</a></li>
     </ul>
   </div>
 </nav>
- 
+ <%= image_tag("https://upload.wikimedia.org/wikipedia/commons/f/f1/Whale_shark_Georgia_aquarium.jpg",class: "background_img") %>
+
+<div class="window"></div>
+
+<div class="page">
 
 
 <%=yield%>
+</div>
+</div>
   </div>
 </div>
 </body>

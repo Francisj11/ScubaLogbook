@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+
+<p>
+  
+  <%= image_tag(@dive.image_URL, class: 'list_image',size: "300x300") %>
+</p>
+
 <p>
   <strong>Date:</strong>
   <%= @dive.date %>
@@ -40,10 +46,7 @@
   <%= @dive.rating %>
 </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @dive.image_URL %>
-</p>
+
 
 <%= link_to 'Edit', edit_dive_path(@dive) %> |
 <%= link_to 'Back', dives_path %>

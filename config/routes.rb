@@ -1,11 +1,23 @@
 Rails.application.routes.draw do
 
-root 'store#home'
-  get 'about' => "store#about", as: :about
-  get 'contact' => "store#contact", as: :contact
+  
+
+  resources :users
+	root 'store#home'
  
 
   resources :dives
+
+
+	get 'admin' => 'admin#index'
+
+controller :sessions do
+
+  get 'login' => :new
+  post 'login' => :create
+  delete 'logout' => :destroy
+ 
+end
 
 	
   # The priority is based upon order of creation: first created -> highest priority.

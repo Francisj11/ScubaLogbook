@@ -4,7 +4,11 @@ class DivesController < ApplicationController
   # GET /dives
   # GET /dives.json
   def index
-    @dives = Dive.all
+	if params[:id]
+		@dives = Dive.where(user_id: params[:id])
+	else
+    	@dives = Dive.all
+	end
   end
 
   # GET /dives/1
@@ -69,6 +73,6 @@ class DivesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dive_params
-      params.require(:dive).permit(:date, :time, :duration, :depth, :dive_type, :dive_buddy, :location, :rating, :image_URL, :title, :notes)
+      params.require(:dive).permit(:date, :time, :duration, :depth, :dive_type, :dive_buddy, :location, :rating, :image_URL, :title, :notes, :user_id)
     end
 end
