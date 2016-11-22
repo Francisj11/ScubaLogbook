@@ -1,11 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<div id="showdive">
 
-<p>
-  
-  <%= image_tag(@dive.image_URL, class: 'list_image',size: "300x300") %>
-</p>
+</br>
+  <div id="imagediv">
+  <%= image_tag(@dive.image_URL, class: 'list_image',size: "500x500") %>
+</div>
 
+</br>
+
+<div id="contentsdiv">
 <p>
   <strong>Date:</strong>
   <%= @dive.date %>
@@ -31,6 +35,8 @@
   <%= @dive.dive_type %>
 </p>
 
+</div >
+<div>
 <p>
   <strong>Dive buddy:</strong>
   <%= @dive.dive_buddy %>
@@ -45,8 +51,15 @@
   <strong>Rating:</strong>
   <%= @dive.rating %>
 </p>
+<p>
+  <strong>Notes:</strong>
+  <%= @dive.notes %>
+</p>
 
-
-
+</div>
+<br></br>
 <%= link_to 'Edit', edit_dive_path(@dive) %> |
 <%= link_to 'Back', dives_path %>
+</div>
+
+

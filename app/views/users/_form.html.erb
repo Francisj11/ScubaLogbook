@@ -1,3 +1,5 @@
+
+<br/>
 <div class="scuba_form">
 
 <%= form_for @user do |f| %>
@@ -12,9 +14,10 @@
       </ul>
     </div>
   <% end %>
-
-  <fieldset>
-  <legend>Enter User Details</legend>
+<div id="new_user_div>
+  <fieldset class="new_user">
+	
+  <h3>Enter User Details</h3>
 
   <div class="field">
     <%= f.label :name, 'Name:' %>
@@ -37,6 +40,7 @@
   </div>
 
   </fieldset>
+</div>
 <% end %>
 
 </div>

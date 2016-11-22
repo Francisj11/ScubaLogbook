@@ -3,39 +3,41 @@
 
 
 
-
-
+<h2 id="divelistheader">List of dives</h2>
 <table>
   
 
   <tbody>
     <% @dives.each do |dive| %>
-  
+  		
       <%= content_tag :tr, class: cycle('list_line_odd', 'list_line_even') do %>
-  		<td>
-    <%=link_to image_tag(dive.image_URL, class: 'list_image',size: "200x200"), dive %>
-  		</td>
-		<td></td>
+  		<div class="table_cell">
+    <%=link_to image_tag(dive.image_URL, class: 'list_image', size: "300x300"), dive %><br/>
+  		
+		
+		<center><div class="details">
+		<%= dive.location %>
+        <%= dive.date %><br/>
 
-		<td><%= dive.location %></td>
-        <td><%= dive.date %></td>
         
-        <th><%= dive.depth %></td>
-        <td><%= dive.dive_type %></td>
-        <th><%= dive.dive_buddy %></td>
+
+
+
+
         
-        <th><%= dive.rating %></td>
-        
-        <th><%= link_to 'Show', dive %></td>
-        <td><%= link_to 'Edit', edit_dive_path(dive) %></td>
-        <th><%= link_to 'Destroy', dive, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      <% end %>
+        <%= link_to 'Show   ', dive %>
+        <%= link_to 'Edit   ', edit_dive_path(dive) %>
+        <%= link_to 'Delete', dive, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</div></center>
+      
+		</div>
+	<% end %>
+	
     <% end %>
+	
   </tbody>
 </table>
 
+
 <br>
-
-<%= link_to 'New Dive', new_dive_path %>
-
 

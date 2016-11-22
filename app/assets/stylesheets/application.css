@@ -46,8 +46,8 @@ float:bottom;
       li {
         list-style: none;
         a {
-          color: #bfb;
-	  font-size: small;
+          color: red;
+	  font-size: 16ox;
 	}
       }
     }
@@ -77,7 +77,6 @@ html, body {
   margin-top: -180px; /* negative value of footer height */
   height: 180px;
   clear: both;
-	background-color:white;
 
 } 
 
@@ -117,4 +116,159 @@ display: block;
 
 nav.navbar-default {
 	position:fixed;
+}
+
+
+
+a {
+	font-size:25px;
+
+}
+
+.field {
+	font-size:25px;
+	color:white;
+}
+
+h1{
+	color:white;
+}
+
+
+#login{
+	font-size:25px;
+	color:white;
+	padding:20px;
+	border:solid;
+	width:50%;
+}
+
+#submit_tag{
+	color:black;
+	font-size:20px;
+}
+
+legend{
+	font-size:25px;
+	color:white;
+}
+
+.new_user{
+	padding:20px;
+	border:solid;
+	border-color:white;
+	color:white;
+	width:50%;
+	
+}
+
+.actions{
+	color:black;
+}
+
+#new_user_div{
+	padding-left:200px;
+	background-color:red;
+}
+
+.field{
+	color:black;
+}
+
+label{
+	color:white;
+}
+
+
+.new_dive_form{
+	
+	border:solid;
+	border-color:white;
+	padding:20px;
+	width:25%;
+}
+
+submit{
+	height:30px;
+}
+
+.dive_table{
+	font-size:25px;
+	width:50%;
+}
+
+table{
+	background-color:#42f4cb;
+	font-size:25px;
+	padding:20px;
+}
+
+tbody{
+	background-color:#42f4cb;
+}
+
+td{
+	font-size:20px;
+}
+
+.table_cell{
+	display:block;
+	width:20pc;
+	font-size:20px;
+	border:solid;
+	border-color:white;
+	padding:5px;
+	float:left;
+	color:white;
+	
+	
+			
+}
+
+content_tag{
+	font-size:20px;
+}
+.list_line_even{
+	font-size:20px;
+}
+
+.list_image:hover {
+border: none !important;
+display: block;
+}
+
+#divelistheader{
+	color:white;
+	
+}
+
+.details{
+	float:center;
+	background-color:black;
+	top:50px;
+}
+
+#showdive{
+	margin: auto;
+	display:block;
+	width:80pc;
+	font-size:20px;
+	border:solid;
+	border-color:white;
+	padding:5px;
+	
+	color:white;
+}
+
+#imagediv{
+	width:30pc;
+	margin:auto;
+	display:block;
+}
+
+#contentsdiv{
+	padding:4px;
+	float:left;
+	width:35pc;
+	display:block;
 }
