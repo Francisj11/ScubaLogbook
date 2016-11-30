@@ -5,7 +5,7 @@
   <% end %>
   <%= form_tag do %>
     <fieldset id="login">
-      <h3><br/>Please Log In</h3>
+      <h3 id="loginheader"><br/>Please Log In</h3>
       <div>
         <%= label_tag :name, 'Name:' %>
         <%= text_field_tag :name, params[:name] %>

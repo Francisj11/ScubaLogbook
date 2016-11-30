@@ -137,10 +137,11 @@ h1{
 
 #login{
 	font-size:25px;
-	color:white;
+	color:black;
 	padding:20px;
 	border:solid;
 	width:50%;
+	border-color:white;
 }
 
 #submit_tag{
@@ -271,4 +272,9 @@ display: block;
 	float:left;
 	width:35pc;
 	display:block;
+}
+
+#loginheader{
+	color:white;
+
 }

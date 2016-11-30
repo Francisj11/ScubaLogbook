@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <div id="showdive">
-
+<center><h1>
+  <strong>
+  <%= @dive.title %></strong>
+</h1></center>
 </br>
   <div id="imagediv">
   <%= image_tag(@dive.image_URL, class: 'list_image',size: "500x500") %>
@@ -10,6 +13,9 @@
 </br>
 
 <div id="contentsdiv">
+
+
+
 <p>
   <strong>Date:</strong>
   <%= @dive.date %>
@@ -39,7 +45,8 @@
 <div>
 <p>
   <strong>Dive buddy:</strong>
-  <%= @dive.dive_buddy %>
+	  
+	<%= @dive.dive_buddy %>
 </p>
 
 <p>
