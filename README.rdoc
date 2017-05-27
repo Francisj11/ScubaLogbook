@@ -7,10 +7,6 @@ This was a project completed for my CS424: Object Oriented Programming/Internet 
 I built a web application using Ruby on rails with a SQLite Database which allows Scuba Divers to record and share the dives they have taken part in and view dives uploaded by others. It was developed on Linux Mint.
 
 Learning outcomes:
-  Familiarised wiith linux terminal.
+  Familiarised with linux terminal.
   Became comfortable with the Ruby on rails framework.
   Leaned how to use AJAX and implement a RESTful interface.
-
-
-
-<tt>rake doc:app</tt>.
